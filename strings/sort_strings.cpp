@@ -13,12 +13,13 @@ int main() {
         vector.push_back(input);
         std::cin >> input;
     }
-    std::sort(vector.begin(), vector.end());
 
+    std::sort(vector.begin(), vector.end());
+    
     std::cout << "Sorted array of words" << std::endl;
-    std::cout << '[';
+    std::cout << "[ ";
     for (int i = 0; i < vector.size(); i++) {
-        std::cout << ' ' << vector[i] << ' ';
+        std::cout << vector[i] << ' ';
     }
     std::cout << ']' << std::endl;
 
